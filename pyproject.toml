@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "open-api-learn"
+version = "0.1.0"
+description = ""
+authors = ["Pedro Sousa <36779714+SousaPedro11@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{ include = "open_api_learn" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.26.4"
+aiohttp = "^3.8.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = { version = "^23.1a1", allow-prereleases = true }
+mypy = "^0.991"
+pylint = "^2.15.10"
+isort = "^5.11.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
